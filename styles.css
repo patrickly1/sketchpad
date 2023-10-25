@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 2px;
+    border: 2px solid black;
+}
+
+.grid-item {
+    height: 50px; /* Adjust as needed */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+}
+
+
+
+.none {
+    width: calc(100% / 16);
+    padding-bottom: calc(100% / 16);
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 900px;
+        border: 2px solid black;
+    }
+    
+    .grid-item {
+    
+        height: 0px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        width: calc(100% / 16);
+        padding-bottom: calc(100% / 16);
+    }
+    
+}
